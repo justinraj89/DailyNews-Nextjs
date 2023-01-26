@@ -1,6 +1,4 @@
-// How data from API is expected to be sent to us
-// Custon types (Paginatino, DataEntry[]...)
-    
+
 type Article = {
 	author: string | null;
 	category: string;
@@ -15,22 +13,22 @@ type Article = {
 };
 
 type Pagination = {
-    count: Int;
-    limit: Int;
-    offset: Int;
-    total: Int;
-}
+	count: Int;
+	limit: Int;
+	offset: Int;
+	total: Int;
+};
 
 type NewsResponse = {
-    pagination: Pagination;
-    data: Article[];
-}
+	pagination: Pagination;
+	data: Article[];
+};
 
 type Category =
-    | 'general'
-    | 'business'
-    | 'entertainment'
-    | 'health'
-    | 'science'
-    | 'sports'
-    | 'technology';
+	| 'business'
+	| 'entertainment'
+	| 'general'
+	| 'health'
+	| 'science'
+	| 'sports'
+	| 'technology';
